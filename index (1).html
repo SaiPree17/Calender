@@ -32,7 +32,25 @@
                 </p>
             </div>
             <div class="right"></div>
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <button class="close" onclick="closeModal();">&times;</button>
+                <p id="modalText"></p>
+            </div>
+
+            </div>
         </div>
         <script src="script.js"></script>
+        <script>
+            function closeModal() {
+                const modalSelector = document.querySelector(".modal");
+                modalSelector.style.display = "none";
+                document.getElementById("color_remove").style.color="black";
+                document.getElementById("color_remove").removeAttribute("color_remove")
+            }
+
+        </script>
     </body>
 </html>
